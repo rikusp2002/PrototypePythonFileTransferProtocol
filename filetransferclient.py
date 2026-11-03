@@ -14,7 +14,7 @@ context = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
 #I still don't know why do we need this but I'm not really sure rn I will check this later
 context.check_hostname = False
 context.load_verify_locations(cafile="server.crt")
-    
+#Lol forgot to put certificate at first so it showed a certificate error. This works now.    
 raw_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 secure_socket = context.wrap_socket(raw_socket, server_hostname=HOST)
     
