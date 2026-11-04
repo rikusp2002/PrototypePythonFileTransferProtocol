@@ -1,7 +1,0 @@
-client_dirs/
-server_dir/
-server.key
-server.csr
-server.crt
-openssl-25519.cnf
-.gitignore
